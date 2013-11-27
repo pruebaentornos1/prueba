@@ -3,7 +3,7 @@ B1_Ej2
 public class B1_Ej2_c243 {
 
     /**
-     *Ejercicio 1. 
+     *Ejercicio 1. y ahora añado esto 
      */
     public static void main(String[] args) {
        double n;
