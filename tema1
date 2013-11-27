@@ -3,7 +3,7 @@ B1_Ej2
 public class B1_Ej2_c243 {
 
     /**
-     *Ejercicio 1. Diseña una clase que muestre el cuadrado de 243. Llama a la clase c243.java
+     *Ejercicio 1. 
      */
     public static void main(String[] args) {
        double n;
