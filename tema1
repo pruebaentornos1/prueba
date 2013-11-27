@@ -1,0 +1,2019 @@
+B1_Ej2
+
+public class B1_Ej2_c243 {
+
+    /**
+     *Ejercicio 1. Diseña una clase que muestre el cuadrado de 243. Llama a la clase c243.java
+     */
+    public static void main(String[] args) {
+       double n;
+        n=(int) Math.pow(243,2);
+        
+        System.out.println("El cuadrado de 243 es "+n);
+        
+    }
+}
+
+---------
+
+B1_Ej3
+
+ import java.util.Scanner;
+
+public class B1_Ej3_Perimetrorectangulo {
+
+    /**
+     * Calcula el perímetro de un rectángulo, introduciendo previamente la base y la
+altura por teclado.
+     */
+    public static void main(String[] args) {
+        
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int b;
+        int a;
+        int p;
+        
+        System.out.println("Dime la base");
+        cad=teclado.nextLine();
+        b=Integer.parseInt(cad);
+        
+        System.out.println("Dime la altura");
+        cad=teclado.nextLine();
+        a=Integer.parseInt(cad);
+        
+        p=2*(b+a);
+        
+        System.out.println("El perimetro es "+p);
+        
+    }
+}
+
+---------
+
+B1_Ej4
+
+import java.util.Scanner;
+
+public class B1_Ej4_Celsius_fahrenheit {
+
+    /**
+     * Diseña una clase que realice la conversión siguiente: una temperatura dada en
+grados Celsius en Fahrenheit.
+     */
+    public static void main(String[] args) {
+        
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        
+        double celsius;
+        double far;
+        
+        System.out.println("Dime los grados Fahrenheit");
+        cad=teclado.nextLine();
+        far=Integer.parseInt(cad);
+        
+        celsius= (far-32.0)/1.8;
+        
+        System.out.println(far+ " grados Fº son "+ celsius+ " grados ºC");
+        
+        System.out.println("Dime los grados Celsius");
+        cad=teclado.nextLine();
+        celsius=Integer.parseInt(cad);
+        
+        far = (9.0*celsius/5.0) +32.0;
+        
+        System.out.println(celsius+ " grados ºC son "+ far+ " grados ºF");
+    }
+}
+
+-------------
+
+B1_Ej5
+
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B1_Ej5_Triangulo {
+
+    /**
+     * Calcula el área de un triángulo en función de las longitudes de sus lados.
+area=Math.sqrt(p*(p-A)*(p-B)*(p-C)) donde A,B,C son los lados y p es
+semiperímetro, donde p=(A+B+C)/2.
+     */
+    public static void main(String[] args) {
+        
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int a;
+        int b;
+        int c;
+        int p;
+        double area;
+        
+        System.out.println("Dime la longitud del lado A");
+        cad=teclado.nextLine();
+        a=Integer.parseInt(cad);
+        
+        System.out.println("Dime la longitud del lado B");
+        cad=teclado.nextLine();
+        b=Integer.parseInt(cad);
+        
+        System.out.println("Dime la longitud del lado C");
+        cad=teclado.nextLine();
+        c=Integer.parseInt(cad);
+        
+        p=(a+b+c)/2;
+        
+        area=Math.sqrt(p*(p-a)*(p-b)*(p*c));
+        
+        System.out.println("El area del triangulo es "+area);
+    }
+}
+
+------------
+
+B1_Ej6
+
+import java.util.Scanner;
+
+public class B1_Ej6_Intercambio {
+
+    /**
+     * Diseña una clase donde se introduzcan dos variables de tipo int, y se
+intercambien sus valores.
+     */
+    public static void main(String[] args) {
+        
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int v1;
+        int v2;
+        int cambio;
+        
+        System.out.println("Dime la variable 1");
+        cad=teclado.nextLine();
+        v1=Integer.parseInt(cad);
+        
+        System.out.println("Dime la variable 2");
+        cad=teclado.nextLine();
+        v2=Integer.parseInt(cad);
+        
+        cambio=v1;
+        v1=v2;
+        v2=cambio;
+        
+        System.out.println("El nuevo valor de la variable 1 es "+ v1 +" y el nuevo valor de la variable 2 es "+v2);
+    }
+}
+
+-------------
+
+B2-Ej1
+
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej1_Mayor {
+
+    /**
+     * Hacer un programa que lea un numero por teclado y nos diga si mayor que cero
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        double numero;
+        
+        System.out.println("Dime un numero");
+        cad=teclado.nextLine();
+        numero=Double.parseDouble(cad);
+        
+        if (numero<=0)
+        { 
+            System.out.println("Numero menor que cero");
+        }
+        else
+        {
+            System.out.println("Numero mayor que cero");
+        }
+    }
+}
+
+-------------
+
+B2-ej2
+
+import java.util.Scanner;
+
+public class B2_Ej2_Igual {
+
+    /**
+     * Hacer un programa que lea un numero por teclado y nos diga si igual a -10.
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        double numero;
+        
+        System.out.println("Dime un numero");
+        cad=teclado.nextLine();
+        numero=Double.parseDouble(cad);
+        
+        if (numero==-10)
+        {
+            System.out.println("Numero igual a -10");
+        }
+        else
+        {
+            System.out.println("Numero distinto a -10");
+        }
+    }
+}
+
+-------------
+
+B2_ej3
+
+import java.util.Scanner;
+
+public class B2_Ej3_Menor {
+
+    /**
+     *  Programa que lea un numero por teclado y nos diga si menor que 100.
+     */
+    public static void main(String[] args) {
+     Scanner teclado=new Scanner(System.in);
+     String cad;
+     double numero;
+     
+        System.out.println("Dime un numero");
+        cad=teclado.nextLine();
+        numero=Double.parseDouble(cad);
+        
+        if (numero<100)
+        {
+            System.out.println("Numero menor de 100");
+        }
+        else
+        {
+            System.out.println("Numero mayor de 100");
+        }
+    }
+}
+
+----------------
+
+B2-ej4
+
+import java.util.Scanner;
+
+public class B2_Ej4_Mayor_igual {
+
+    /**
+     * Hacer un programa que lea dos numero por teclado y nos muestre si el primero es
+"mayor o igual" que el segundo.
+     */
+    public static void main(String[] args) {
+         Scanner teclado=new Scanner(System.in);
+         String cad;
+         int n1,n2;
+         
+         System.out.println("Dime un numero");
+         cad=teclado.nextLine();
+         n1=Integer.parseInt(cad);
+         
+         System.out.println("Dime otro numero");
+         cad=teclado.nextLine();
+         n2=Integer.parseInt(cad);
+         
+         if (n1>=n2)
+         {
+             System.out.println("El numero "+n1+" es mayor o igual al numero "+n2);
+         }
+         
+         else
+         {
+             System.out.println("El numero "+n1+" es menor al numero "+n2);
+         }
+    }
+}
+
+-----------
+
+B2-ej6
+
+import java.util.Scanner;
+
+public class B2_Ej6_Paridad {
+
+    /**
+     * Hacer un programa que lea un numero por teclado y nos diga si es PAR o IMPAR.
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int num;
+        
+        System.out.println("Dime un numero");
+        cad=teclado.nextLine();
+        num=Integer.parseInt(cad);
+        
+        if(num%2==0)
+        {
+            System.out.println("El numero es par");
+        }
+        else
+        {
+            System.out.println("El numero es impar");
+        }
+            
+    }
+}
+
+-------------
+
+B2-ej7
+
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej7_Llamada {
+
+    /**
+     * Leer n minutos, si n minutos es <3 -- coste 0.25€
+     *                                >=3 -- coste 0.06
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int minuto;
+        double coste;
+        
+        System.out.println("Dime los minutos de la llamada");
+        cad=teclado.nextLine();
+        minuto=Integer.parseInt(cad);
+        
+        if (minuto<3)
+        {
+            System.out.println("La llamada cuesta "+minuto*0.25+ " €");
+        }
+        else
+        {
+            System.out.println("La llamada cuesta "+minuto*0.06+ " €");
+        }
+    }
+}
+
+--------------
+
+B2-ej8
+
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej8_Ecuacion {
+
+    /**
+     * resolver una ecuacion de primer grado ax+b=0;ax=b;x=-b/a  ---Siempre y cuando a y b no sean 0
+     * -¿que pasa cunado a y b son 0?
+     * Si a y b son cero sout("Solucion indeterminada");
+     * -¿que pasa si a=0?
+     * sout("solucion imposible");
+     * 
+     * Leer a;leer b
+     * if (a==0) && (b==0) sout ("solucion indeterminada");
+     * else
+     * if a==0  sout ("solucion imposible");
+     * else 
+     * x=-b/a; sout("La solucion es "+x);.
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        double a;
+        double b;
+        double x;
+        
+        System.out.println("Dime a");
+        cad=teclado.nextLine();
+        a=Integer.parseInt(cad);
+        
+        System.out.println("Dime b");
+        cad=teclado.nextLine();
+        b=Integer.parseInt(cad);
+        
+        if ((a==0) && (b==0))
+                {
+                    System.out.println("Solucion indeterminada");
+                }
+        else
+        {
+            if (a==0)
+            {
+                System.out.println("Solucion imposible");
+            }
+            else
+            {
+               x=-b/a;
+                System.out.println("La solucion es "+x);
+            }
+        }
+        
+    }
+}
+
+---------------------
+
+B2-ej10
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej10 {
+
+    /**
+     * Lee un caracter por teclado e indica si la letra es mayuscula
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        
+        System.out.println("Dime una letra");
+        cad=teclado.nextLine();
+        char c=cad.charAt(0);
+        
+        int x=(int) c;
+        
+        if ((x>=65 && x<=90) || (x==209)) //'A'=65   'Z'=90
+        {
+            System.out.println("La letra "+c +" es mayuscula");
+        }
+    }
+}
+
+-------------
+
+B2-ej11,12,13
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej11_12_13_Minuscula_mayuscula_digi {
+
+    /**
+     * Realizar un programa que lea un caracter por teclado y nos muestre si es una
+letra minúscula.
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        char letra;
+        
+        System.out.println("Dime una letra");
+        cad=teclado.nextLine();
+        letra=cad.charAt(0);
+        
+        if (letra>='A'&& letra<='Z')
+        {
+            System.out.println("La letra es mayuscula");
+        }
+        else
+        {
+            if (letra>='a' && letra<='z')
+            {
+                System.out.println("La letra es minuscula");
+            }
+            else 
+            {
+                System.out.println("Es un digito");
+            }
+            }
+        }
+}
+
+-------------
+
+B2-ej14
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej14_Rango {
+
+    /**
+     * Realizar un programa que lea un numero entero por teclado y nos muestre si es
+"mayor de 10 y menor de 20" o "mayor de 15 y menor de 25".
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int num;
+        
+        System.out.println("Dime un numero");
+        cad=teclado.nextLine();
+        num=Integer.parseInt(cad);
+        
+        if (num>10 && num<20)
+        {
+            System.out.println("Mayor de 10 y menor de 20");
+        }
+        
+        
+        if (num>15 && num<25)
+        {
+            System.out.println("Mayor de 15 y menor de 25");
+        }
+        
+    }
+}
+
+-------------
+
+B2-ej17
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej17_NotaAmericano {
+
+    /**
+     * Introducir la nota de un alumno (número entero) e indicar la nota correspondiente
+INS, SF; B; NT, SB o si es nota inválida. (Hacedlo con if y con switch)
+     */
+    public static void main(String[] args) {
+        
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int nota;
+        
+        System.out.println("Dime la nota");
+        cad=teclado.nextLine();
+        nota=Integer.parseInt(cad);
+        
+        if (nota<0 || nota>10)
+        {
+            System.out.println("Nota incorrecta");
+        }
+        else 
+        {
+            switch (nota)
+            {
+                case 0 :
+                case 1 :
+                case 2 :
+                case 3 :
+                case 4 : System.out.println("INSF"); break;
+                case 5 : System.out.println("SF"); break;
+                case 6 : System.out.println("BN"); break;
+                case 7 :
+                case 8 : System.out.println("NT"); break;
+                case 9 :
+                case 10: System.out.println("SB"); break;
+            }
+        }
+    }
+}
+
+------------
+
+B2-ej18
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B2_Ej18_OperadorTernario {
+
+    /**
+     * Calcula el mayor de 2 números, utiliza el operador ternario ()?:
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int n1;
+        int n2;
+        int my;
+        
+        System.out.println("Dime el primer numero");
+        cad=teclado.nextLine();
+        n1=Integer.parseInt(cad);
+        
+        System.out.println("Dime el segundo numero");
+        cad=teclado.nextLine();
+        n2=Integer.parseInt(cad);
+        
+        my=(n1>n2)?n1:n2;
+        System.out.println("El mayor numero es "+my);
+        
+        
+    }
+}
+
+--------------
+
+B3-ej1
+
+public class B3_1_potencias2 {
+
+    
+    public static void main(String[] args) {
+       int contador;
+        for (contador=0;contador<11;contador++)
+        {
+            System.out.println(Math.pow(contador,2));
+        }
+        
+    }
+}
+
+----------------------------------
+
+B3-ej2
+
+import java.util.Scanner;
+/**
+ * Diseña una clase que consista en introducir 10 números enteros por teclado.
+Contar cuántos se han introducido iguales a 0.
+ */
+public class B3_Ej2 {
+
+    
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        
+        int num;
+        int contador=0;
+        int cero=0;
+        
+        do
+        {
+        System.out.println("Dime un numero");
+        num=tec.nextInt();
+        if (num==0)
+        {
+            cero++;
+        }
+        contador++;
+        } while (contador<=10);
+        System.out.println("Numero de 0: "+cero);
+    }
+}
+
+------------------------------------
+
+B3-ej3
+
+import java.util.Scanner;
+
+public class B3_3 {
+
+   
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        String cad;
+        int n1,n2,n3,n4,n5,media;
+        
+        System.out.println("Dime el primer numero");
+        cad=tec.nextLine();
+        n1=Integer.parseInt(cad);
+        
+        System.out.println("Dime el segundo numero");
+        cad=tec.nextLine();
+        n2=Integer.parseInt(cad);
+        
+        System.out.println("Dime el tercer numero");
+        cad=tec.nextLine();
+        n3=Integer.parseInt(cad);
+        
+        System.out.println("Dime el cuarto numero");
+        cad=tec.nextLine();
+        n4=Integer.parseInt(cad);
+        
+        System.out.println("Dime el quinto numero");
+        cad=tec.nextLine();
+        n5=Integer.parseInt(cad);
+        
+        media= (n1+n2+n3+n4+n5)/5;
+        
+        System.out.println("La media es "+media);
+        
+    }
+}
+
+-------------------
+
+B3-ej5
+
+public class B3_5 {
+
+    public static void main(String[] args) {
+        int contador;
+        
+        for ( contador=20;contador<=200;contador++)
+        {
+            if (contador %3=0)
+            {
+                System.out.println(contador+" es multiplo de 3");
+            }
+        }
+    }
+}
+
+------------------
+
+B3-ej5
+
+import java.util.Scanner;
+/**
+ *
+ * @author Alumno_2
+ */
+public class B3_Ej6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        
+        int num;
+        int cuenta;
+        int sumapares=0;
+        int sumaimpares=0;
+        int pares=0;
+        int impares=0;
+        int media=0;
+        
+        for(cuenta=0;cuenta<10;cuenta++)
+        {
+            System.out.println("Dime un numero");
+            num=tec.nextInt();
+            
+            if (num%2==0)
+            {
+                sumapares=sumapares+num;
+                pares++;
+            }
+            else
+            {
+                sumaimpares=sumaimpares+num;
+                impares++;
+            }
+            media=sumaimpares/impares;
+            System.out.println(pares+" son numeros pares");
+            System.out.println("La suma de los pares es "+pares);
+            System.out.println("La media de los impares es "+media);
+        }
+    }
+}
+
+-------------------------------
+
+B3-ej7
+
+
+public class B3_Ej7 {
+
+    /* Del 100 al 150 - mostrar multiplo de 3, cuantots multiplos de 5, suma de los pares.
+    */
+    public static void main(String[] args) {
+         int numMult5=0;
+         int sumapares=0;
+         int contador;
+         
+         
+        /* for (contador=100;contador<=150;contador++)
+         {
+             if (contador%3==0)
+             {
+                 System.out.println(contador+" es multiplo de 3");
+             }
+             if (contador%5==0)
+             {
+                 System.out.println(contador+" es multiplo de 5");
+             }
+             if (contador%2==0)
+             {
+                 sumapares+=contador;
+             }
+         }
+             System.out.println("Entre 100 y 150 hay: "+numMult5+" multiplos de 5 ");
+             System.out.println("La suma de los numeros pares entre 100 y 150 es "+sumapares);
+         */
+         
+         contador=100;
+         
+         while (contador<=150)
+         {
+             if (contador%3==0)
+             {
+                 System.out.println(contador);
+             }
+             if (contador%5==0)
+             {
+                 System.out.println(contador+" es multiplo de 5");
+             }
+             if (contador%2==0)
+             {
+                 sumapares+=contador;
+             }
+             contador++;
+         }
+         System.out.println("Entre 100 y 150 hay: "+numMult5+" multiplos de 5 ");
+             System.out.println("La suma de los numeros pares entre 100 y 150 es "+sumapares);
+         
+    }
+}
+
+---------------------------
+
+B3-ej8
+
+import java.util.Scanner;
+        
+public class B3_Ej8 {
+
+    /**
+     * interes 2% ; capital 6000€ ; n = años ; interes 1 año 6000*0.02 =6000+120 =6120
+     *                                         interes 2 año 6120*0.02 =6120+122.4=6242.4
+     */
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        double intereses;
+        int n;
+        final double interes=0.02;
+        double capital=6000;
+                
+                System.out.println("Dime los años que quieres mantener el dinero");
+                n=tec.nextInt();
+                
+                
+                int contador;
+                
+                for (contador=1;contador<=n;contador++)
+                {
+                    intereses=interes*capital;                       /* Se resume capital+=capital*interes
+                    capital=capital+intereses; //capital+=intereses; */
+                }
+                System.out.println("El dinero que se va a sacar es "+capital);
+    }
+}
+
+---------------------------
+
+B3-ej9
+
+public class B3_Ej9 {
+
+    /**
+     * Halla la suma de los pares comprendidos entre 50 y 500, muestra los múltiplos de
+3 y cuenta los múltiplos de 5. Hacedlo de 3 formas distintas de for.
+     *
+     * for(inicializacion de variables; condicion permanencia; incremento de variables)
+     * {
+     * cuerpo.for;
+     * }
+     */
+    public static void main(String[] args) {
+        /*int sumapares=0;
+        int contador;
+        
+       *
+        * PRIMERA FORMA FOR
+        * 
+        for (contador=50;contador<=500;contador++)
+        {
+            if (contador%2==0)
+            {
+                System.out.println(sumapares+=contador);
+            }
+        }
+            System.out.println(" La suma de los pares del 50 al 500 es "+sumapares); 
+         */   
+         
+          /*
+           * SEGUNDA FORMA FOR
+           *
+           * 
+        
+         int sumapares=0;
+         for (int contador=50;contador<=500;contador++)
+         {
+             if (contador%2==0)
+             {
+                 sumapares+=contador;
+             }
+         }
+         System.out.println(sumapares);
+         */
+        
+         /*
+          * TERCERA FORMA FOR
+          */
+        
+        /*
+        int sumapares;
+         int contador;
+         
+         for (contador=50,sumapares=0;contador<=500;contador++)
+         {
+             if (contador%2==0)
+             {
+                 System.out.println(sumapares+=contador);
+             }
+         }
+         
+         */
+         
+         /*
+          * CUARTA FORMA FOR
+          *
+        
+        int sumapares=0;
+        int contador=50;
+        for ( ;contador<=500;contador++)
+        {
+            if (contador%2==0)
+            {
+                System.out.println(sumapares+=contador);
+            }
+        }
+        System.out.println(sumapares);
+        
+        */
+        
+        /*
+         * QUINTA FORMA FOR
+         *
+        
+        int numpares=0;
+        int conrador=50;
+        
+        for( ;contador<=500; )
+        {
+            if (contador%2==0)
+            {
+                numpares+=contador;
+                contador++;
+            }
+        }
+        System.out.println(numpares);
+        
+        */
+        
+        /*
+         * SEXTA FORMA FOR
+         *
+        
+        int sumpares=0;
+        int contador=50;
+        
+        for( ; ; )
+        {
+            if (contador>500)
+            {
+                break;
+            }
+            if (contador%2==0)
+            {
+                sumpares+=contador;
+            }
+            contador++;
+        }
+        System.out.println(sumpares);
+        * 
+        */
+        
+        /*
+         * SEPTIMA FORMA FOR
+         *
+        int contador;
+        int sumpares;
+        
+        for (contador=50,sumpares=0; ;contador++)
+        {
+            if (contador>500)
+            {
+                break;
+            }
+            if (contador%2==0)
+            {
+                sumpares+=contador;
+            }
+            
+        }
+        System.out.println(sumpares);
+        * 
+        */
+    }
+}
+
+-------------------------------
+
+B3-ej11
+
+import java.util.Scanner;
+
+public class B3_Ej11 {
+
+    /**
+     * Muestra los N primeros múltiplos de 4, donde N es un valor introducido por
+teclado.
+     */
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        
+        /*
+        
+        * 
+        * DO WHILE
+        int n;
+        int mult4;
+        
+        
+        System.out.println("Dime el valor de N");
+        n=tec.nextInt();
+        
+        mult4=0;
+        int contador=1;
+        
+        do
+        {
+            if (contador%4==0)
+            {
+                System.out.println(contador+" es multiplo de 4");
+                mult4++;
+            }
+            
+            contador++;
+        }while (mult4<n);
+        
+        
+        
+        *WHILE
+        int n;
+        int mult4;
+        
+        
+        System.out.println("Dime el valor de N");
+        n=tec.nextInt();
+        
+        mult4=0;
+        int contador=1;
+        
+        while(mult4<n)
+                {
+                    if (contador%4==0)
+                    {
+                        System.out.println(contador+" es multiplo de 4");
+                        mult4++;
+                    }
+                    contador++;
+                }
+        
+        */
+        
+        
+        //FOR
+        int n;
+        int mult4;
+        
+        
+        System.out.println("Dime el valor de N");
+        n=tec.nextInt();
+        
+        
+        int contador;
+        for(mult4=0,contador=1;mult4<n;contador++)
+        {
+            if (contador%4==0)
+            {
+                System.out.println(contador+" es multiplo de 4");
+                mult4++;
+            }
+        }
+    }
+}
+
+--------------------------------------------
+
+B3-ej13
+
+
+public class B3_Ej13 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner tec=new Scanner(System.in);
+        
+        int numero;
+        int contador;
+        int resultado=1 ; 
+        System.out.println("Dime el numero");
+        numero=tec.nextInt();
+        
+        for ( contador=1;contador<=numero;contador++)
+        {
+            resultado*=contador;
+        }
+        System.out.println("el factorial es "+resultado);
+    }
+}
+
+-----------------------------------------
+
+Pseudocodigo-1
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_1_Longitudareacirculo {
+
+    /**
+     * Calcular la longitud y area de un circulo
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        double r,longitud,area;
+        
+        System.out.println("Dime el radio");
+        cad=teclado.nextLine();
+        r=Double.parseDouble(cad);
+        
+        longitud=2*Math.PI*r;
+        area=Math.PI*Math.pow(r, 2);
+        
+        System.out.println("La longitud de la circunferencia es "+longitud);
+        System.out.println("El area del circulo es "+area);
+    }
+}
+
+-------------------
+
+Pseudocodigo 2
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_2_EurosDOlares {
+
+    /**
+     * Cambiar de euros a dolares
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        double euros,dolares,equivalencia;
+        
+        System.out.println("¿Cuantos euros quieres cambiar?");
+        cad=teclado.nextLine();
+        euros=Double.parseDouble(cad);
+        
+        System.out.println("¿Cual es la cotizacion del € $ ?");
+        cad=teclado.nextLine();
+        equivalencia=Double.parseDouble(cad);
+        
+        dolares=equivalencia*euros;
+        
+        System.out.println("Los "+euros+" euros corresponden a "+dolares+" dolares");
+    }
+}
+
+--------------
+
+Pseudocodigo 3
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_3_Salario {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;;
+        double preciohora,salariobruto,salarioneto;
+        int horas;
+        
+        System.out.println("Dime el nombre del empleado");
+        String nombre=teclado.nextLine();
+        
+        System.out.println("Dime las horas trabajadas");
+        cad=teclado.nextLine();
+        horas=Integer.parseInt(cad);
+        
+        System.out.println("Dime el precio de la hora");
+        cad=teclado.nextLine();
+        preciohora=Double.parseDouble(cad);
+        
+        salariobruto=horas*preciohora;
+        salarioneto=salariobruto*0.9;
+        
+        System.out.println("El trabajador "+nombre+" cobrara de salario neto "+salarioneto+" euros");
+        
+    }
+}
+
+-----------------
+
+Pseudocodigo 4
+
+*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_4_Salario2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        double preciohora,salario;
+        int horas,horasextra;
+        
+        System.out.println("Dime el nombre ");
+        String nombre=teclado.nextLine();
+        
+        System.out.println("Dime las horas trabajadas");
+        cad=teclado.nextLine();
+        horas=Integer.parseInt(cad);
+        
+        System.out.println("Dime el precio de la hora");
+        cad=teclado.nextLine();
+        preciohora=Double.parseDouble(cad);
+        
+        if (horas>40)
+        {
+            horasextra=horas-40;
+            salario=40*preciohora+horasextra*preciohora*1.5;
+        }
+        else
+        {
+            salario=40*preciohora;
+        }
+        
+        System.out.println(nombre+" cobra "+salario+" euros");
+        
+        /*horasextra=0;
+        
+        if (horas>40)
+        {
+            horasextra=horas-40;
+        }
+        salario=40*preciohora+horasextra*preciohora*1.5;
+        
+        System.out.println(nombre+" cobra "+salario+" euros");
+        */
+      
+        
+    }
+}
+
+-----------------
+
+Pseudocodigo 5
+
+import java.util.Scanner;
+
+public class Pseudocodigo_5_Comprobacion {
+
+    
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int A;
+        int B;
+        int C;
+        
+        System.out.println("Dime el primer numero");
+        cad=teclado.nextLine();
+        A=Integer.parseInt(cad);
+        
+        System.out.println("Dime el segundo numero");
+        cad=teclado.nextLine();
+        B=Integer.parseInt(cad);
+        
+        System.out.println("Dime el tercer numero");
+        cad=teclado.nextLine();
+        C=Integer.parseInt(cad);
+        
+        if ((A==B+C)||(B==A+C)||(C==A+B))
+        {
+            System.out.println("Son iguales");
+        }
+        else
+        {
+            System.out.println("Son distintos");
+        }
+    }
+}
+
+----------------
+
+Pseudocodigo-5factorial
+
+public class Pseudocodigo_5factorial {
+
+    
+    public static void main(String[] args) {
+        
+        int resultado=1;
+        
+        for (int contador=1;contador<6;contador++)
+        {
+            resultado = resultado*contador;
+        }
+        System.out.println("el factorial de 5 es: "+resultado);
+        
+        
+    }
+}
+
+-------------------
+
+Pseudocodigo 6
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_6 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        String nombre;
+        int horas,horasextra;
+        double tarifa,sB,sN,tasas;
+        
+        System.out.println("Dime el nombre");
+        nombre=teclado.nextLine();
+        
+        System.out.println("Dime las horas trabajadas");
+        cad=teclado.nextLine();
+        horas=Integer.parseInt(cad);
+        
+        System.out.println("Dime la tarifa");
+        cad=teclado.nextLine();
+        tarifa=Double.parseDouble(cad);
+        
+        //Obtener Salario Bruto
+        if (horas>35)
+        {
+            sB=35*tarifa+(horas-35)*tarifa*1.5;
+            /*horasextra=horas-35;
+             *sB=35*tarifa+horasextra*tarifa*1.5;
+             */
+        }
+        else
+        {
+            sB=horas*tarifa;
+        }
+        
+        //Obtener Tasas
+        
+        if (sB<=100)
+        {
+            tasas=0;
+        }
+        else
+            if (sB<=200)
+            {
+                tasas=(sB-100)*0.1;
+            }
+        else
+            {
+                tasas=100*0.1+(sB-200)*0.25;
+            }
+        
+        //Obtener Salario Neto
+        
+        sN=sB-tasas;
+        
+        System.out.println("El trabajador "+nombre+" con salario bruto "+sB+"€ paga de impuestos "+tasas+" y cobra "+sN);
+    }
+}
+
+------------------
+
+Pseudocodigo 7
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int hora;
+        int seg;
+        int min;
+        
+        System.out.println("Dime la hora");
+        cad=teclado.nextLine();
+        hora=Integer.parseInt(cad);
+        
+        System.out.println("Dime los minutos");
+        cad=teclado.nextLine();
+        min=Integer.parseInt(cad);
+        
+        System.out.println("Dime los segundos");
+        cad=teclado.nextLine();
+        seg=Integer.parseInt(cad);
+        
+        //if ((seg>=0 & seg<=59) & (min>=0 & min<=59) & (hora>=0 & hora<=23))
+        {
+        
+        seg=seg+1;
+        
+        if (seg==60)
+        {
+            seg=0;
+            min=min+1;
+            
+            if (min==60)
+            {
+                min=0;
+                hora=hora+1;
+                
+            if (hora==24)
+            {
+                hora=0;
+            }
+            }
+        }
+        System.out.println("La hora siguiente es "+hora+" :"+min+" :"+seg);
+    }
+    
+    }
+}
+
+--------------
+
+Pseudocodigo 8
+
+import java.util.Scanner;
+
+public class Pseudocodigo_8 {
+
+  
+    public static void main(String[] args) {
+       Scanner teclado=new Scanner(System.in);
+       String cad;
+       int anyo;
+       
+        System.out.println("Dime un año");
+        cad=teclado.nextLine();
+        anyo=Integer.parseInt(cad);
+        
+        if (anyo>0)
+        {
+            if ((anyo%4==0) && (anyo%100==0) || (anyo%400==0) )
+                    {
+                        System.out.println("El año "+anyo+" es bisiesto");
+                    }
+            else
+        {
+            System.out.println("El año "+anyo+" no es bisiesto");
+        }
+        
+        else
+    {
+        System.out.println("El año introducido es incorrecto, debe ser mayor que 0");
+    }
+        
+    }
+}
+}
+
+-------------------
+
+Pseudocodigo 9
+
+import java.util.Scanner;
+
+public class Pseudocodigo_9_Notas {
+
+   
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        char letra;
+        
+        System.out.println("Dime la nota en el sistema americano");
+        cad=teclado.nextLine(); // cad=cad.toUpperCase();
+        letra=cad.charAt(0); //Leer una letra. --- letra=cad.chartAt(0);
+        
+        switch (letra)
+        {
+            case 'A':case 'a': System.out.println("SB"); break;
+            case 'B':case 'b': System.out.println("NT"); break;
+            case 'C':case 'c': System.out.println("B"); break;
+            case 'D':case 'd': System.out.println("SF"); break;
+            case 'E':case 'e': System.out.println("INSF"); break;
+            case 'F':case 'f': System.out.println("No presentado"); break;
+            default : System.out.println("La nota es incorrecta");
+        }
+    }
+}
+
+-------------------
+
+Pseudocodigo 10
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author xps
+ */
+public class Pseudocodigo_10_Diasemana {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int dia;
+        
+        System.out.println("Dime el dia de la semana");
+        cad=teclado.nextLine();
+        dia=Integer.parseInt(cad);
+        
+        switch (dia)
+        {
+            case 1: System.out.println("Lunes"); break;
+            case 2: System.out.println("Martes"); break;
+            case 3: System.out.println("Miercoles"); break;
+            case 4: System.out.println("Jueves"); break;
+            case 5: System.out.println("Viernes"); break;
+            case 6: System.out.println("Sabado"); break;
+            case 7: System.out.println("Domingo");break;
+            default : System.out.println("Dia incorrecto"); break;
+        }
+    }
+}
+
+---------------------
+
+Pseudocodigo 11
+
+import java.util.Scanner;
+
+public class Pseudocodigo_11 {
+
+  
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        String cad;
+        int menor,n1,n2,n3;
+        
+        System.out.println("Dime el primer numero");
+        cad=teclado.nextLine();
+        n1=Integer.parseInt(cad);
+        
+        System.out.println("Dime el segundo numero");
+        cad=teclado.nextLine();
+        n2=Integer.parseInt(cad);
+        
+        System.out.println("Dime el tercer numero");
+        cad=teclado.nextLine();
+        n3=Integer.parseInt(cad);
+        
+        menor=n1;
+        if (menor>n2)
+        {
+            menor=n2;
+        }
+        if (menor>n3)
+        {
+            menor=n3;
+        }
+        System.out.println(menor+" es el menor");
+                
+    }
+}
+
+--------------------
+
+Pseudocodigo 12
+
+public class Pseudocodigo_12 {
+
+    
+    public static void main(String[] args) {
+        int contador;
+        
+        /*for (int contador=1;contador<6;contador++)
+        {
+            System.out.println(contador);
+        }
+        */
+        contador=1;
+       
+        while (contador<=5)
+        {
+            System.out.println(contador);
+            contador=contador+1;
+        }
+        System.out.println("Fin");
+        
+    }     
+       
+}
+      
+----------------
+
+Pseudocodigo 15alumnos 
+
+import java.util.Scanner;
+
+public class Pseudocodigo_15alumnos {
+
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        String cad;
+        int numA,numS;
+        double suma,nota,media;
+        
+        numA=0;
+        numS=0;
+        suma=0;
+        
+        for (int contador=1 ;contador<16 ;contador++)
+        {
+            System.out.println("Dime la nota");
+            cad=tec.nextLine();
+            nota=Double.parseDouble(cad);
+             
+            if (nota<5)
+            {
+                numS=numS+1;
+            }
+            else
+            {
+                numA=numA+1;
+            }
+            suma=suma+nota;
+        }
+        System.out.println(numA+" aprobados");
+        System.out.println(numS+" suspensos");
+        
+        media=suma/15;
+        System.out.println(media+" nota media");
+    }
+}
+
+-----------------------
+
+Pseudocodigo 15alumnos1
+
+import java.util.Scanner;
+
+public class Pseudocodigo_15alumnos1 {
+
+    
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        String cad;
+        int numA,numS,numAlumnos;
+        double suma,nota,media;
+        
+        numAlumnos=0;
+        numA=0;
+        numS=0;
+        suma=0;
+        
+            System.out.println("Dime la nota");
+            cad=tec.nextLine();
+            nota=Double.parseDouble(cad);
+            
+            while (nota!=-1)
+            {
+            if (nota<5)
+            {
+                numS=numS+1;
+            }
+            else
+            {
+                numA=numA+1;
+            }
+            suma=suma+nota;
+            numAlumnos=numAlumnos+1;
+            
+            System.out.println("Dime la nota");
+            cad=tec.nextLine();
+            nota=Double.parseDouble(cad);
+        }
+        System.out.println("Total de alumnos: "+numAlumnos);
+        System.out.println(numA+" aprobados");
+        System.out.println(numS+" suspensos");
+        
+        media=suma/15;
+        System.out.println(media+" nota media");
+    }
+}
+
+-------------------
+
+Pseudocodigo Comprendidos
+
+public class Pseudocodigo_Comprendidos {
+
+    
+    public static void main(String[] args) {
+        
+        /*int contador;
+         contador=100;
+         while (contador>=90)
+         {
+             System.out.println(contador);
+             contador=contador-1;
+         }
+         */
+        
+        for (int contador=100;contador>=90;contador--)
+        {
+            System.out.println(contador);
+        }
+    }
+}
+
+---------------------
+
+Pseudocodigo multiplos3
+
+public class Pseudocodigo_multiplos3 {
+
+    
+    public static void main(String[] args) {
+        
+        /*for (int contador=24;contador<=45;contador++)
+        {
+            if (contador %3=0)
+            {
+                System.out.println(contador+" es multiplo de 3");
+            }
+        }
+        */
+        int contador;
+        contador=24;
+                while (contador<46)
+                {
+                    if (contador%3==0)
+                    {
+                    System.out.println(contador+" es multiplo de 3");
+                    }
+                
+                       contador=contador+1;
+                }
+    }
+}
+
+--------------------
+
+Pseudocodigo nota15alumnos
+
+import java.util.Scanner;
+
+public class Pseudocodigo_nota15alumnos {
+
+    
+    public static void main(String[] args) {
+       Scanner tec=new Scanner(System.in);
+       String cad;
+       int aprobados,contador;
+       double nota;
+       
+       aprobados=0;
+       contador=1;
+       
+       while (contador<=15)
+       {
+           System.out.println("Dime la nota");
+           cad=tec.nextLine();
+           nota=Double.parseDouble(cad);
+           
+           if (nota>=5)
+           {
+               aprobados=aprobados+1;
+           }
+           contador=contador+1;
+       }
+       
+        System.out.println("Hay "+aprobados+" alumnos aprobados");
+        System.out.println("Hay "+(15-aprobados)+" alumnos suspensos");
+        System.out.println("Porcentaje de aprobados es "+(aprobados*0.15));
+        System.out.println("Porcentaje de suspensos es "+(15-aprobados)*0.15);
+    }
+}
+
+------------------
+
+Pseudocodigo Numeropares
+
+public class Pseudocodigo_Numeropares {
+
+    
+    public static void main(String[] args) {
+       /*int contador;
+       
+       contador=2;
+       while (contador<=10)
+               {
+                   System.out.println(contador);
+                   contador=contador+2;
+               }
+       */
+       for (int contador=1;contador<=5;contador++)
+       {
+           System.out.println(contador*2);
+       }
+    }
+}
+
+-------------------
+
+Pseudocodigo Terramitica
+
+import java.util.Scanner;
+
+public class Pseudocodigo_Terramitica {
+
+    
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        String cad;
+        int edad,totalperson,num4,num4_12,numadul;
+        double caja;
+        
+        totalperson=0;
+        num4=0;
+        num4_12=0;
+        numadul=0;
+        caja=0;
+        
+        System.out.println("Dime la edad");
+        cad=tec.nextLine();
+        edad=Integer.parseInt(cad);
+        
+        while (edad!=-1)
+        {
+            if (edad<4)
+            {
+                num4=num4+1;
+            }
+            else
+              if (edad<=12)
+              {
+                 num4_12=num4_12+1;
+              }
+            else
+              {
+                  numadul=numadul+1;
+              }
+            
+            totalperson=totalperson+1;
+            
+            System.out.println("Dime la edad");
+            cad=tec.nextLine();
+            edad=Integer.parseInt(cad);
+        }
+        
+        System.out.println(num4+" menores de 4 años");
+        System.out.println(num4_12+" entre 4 y 12 años");
+        System.out.println(numadul+" adultos");
+        
+        caja=num4_12*20+numadul*40;
+        System.out.println(caja+" euros recaudados");
+    }
+}
+
+--------------------------
+
+Pseudocodigo Total10
+
+import java.util.Scanner;
+
+public class Pseudocodigo_Total10 {
+
+    
+    public static void main(String[] args) {
+        Scanner tec=new Scanner(System.in);
+        String cad;
+        
+        int contador;
+        boolean hay10;
+        double nota;
+        
+        hay10=false;
+        
+        for (contador=1;contador<11;contador++)
+        {
+            System.out.println("Dime la nota");
+            cad=tec.nextLine();
+            nota=Double.parseDouble(cad);
+            
+            if (nota==10)
+            {
+                hay10=true;
+            }
+        }
+        if (hay10==true)
+        {
+            System.out.println("Si, al menos hay un 10 en las notas");
+        }
+        else
+        {
+            System.out.println("No hay ningun 10 en las notas");
+        }
+    }
+}
